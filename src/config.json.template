@@ -1,0 +1,47 @@
+{
+    "ADC_PINS_TO_MONITOR": [26, 27, 28, 29],
+    "LOG_MANAGER_BUFFER_SIZE": 50,
+    "DST_HOURS": 2,
+    "ADC_PINS_TO_MONITOR": [26, 27, 28, 29],
+    "WATER_PUMP_PIN": 22,
+    "WATER_PUMP_SWITCH_PIN": 1,
+    "SOLENOID_VALVE_1_SWITCH_PIN": 2,
+    "SOLENOID_VALVE_2_SWITCH_PIN": 3,
+    "SOLENOID_VALVE_3_SWITCH_PIN": 4,
+    "SOLENOID_VALVE_4_SWITCH_PIN": 5,
+    "AIR_PUMP_PIN": 23,
+    "AIR_PUMP_SWITCH_PIN": 6,
+    
+    "MOISTURE_CHECK_INTERVAL": 5,
+    "MOISTURE_THRESHOLD": 30,
+    "WIFI_SSID": "<YOUR_WIFI_SSID>",
+    "WIFI_PASSWORD": "<YOUR_WIFI_PASSWORD>",
+    "WIFI_COUNTRY": "<YOUR_COUNTRY_CODE>",
+    
+    "MQTT_CLIENT_NAME": "<YOUR_MQTT_CLIENT_NAME>",
+    "MQTT_BROKER_ADDRESS": "<YOUR_MQTT_BROKER_IP>",
+    "MQTT_BROKER_PORT": 1883,
+    "MQTT_UPDATE_INTERVAL": 60,
+    "MQTT_TOPICS": {
+        "system": [
+            "internal_voltage",
+            "chip_temperature",
+            "cpu_frequency",
+            "cpu_usage",
+            "ram_usage",
+            "timestamp",
+            "uptime"
+        ],
+        "adc": [
+            "adc_26",
+            "adc_27",
+            "adc_28",
+            "adc_29"
+        ],
+        "current_config": [
+            "moisture_treshold",
+            "moisture_check_interval",
+            "mqtt_update_interval"
+        ]
+    },
+}
